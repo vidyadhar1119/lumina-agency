@@ -61,7 +61,6 @@ export function Portfolio() {
           ))}
         </motion.div>
 
-        {/* Updated gap to give editorial layout breathing room */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
           <AnimatePresence mode="popLayout">
             {filtered.map((project, index) => (
@@ -74,7 +73,6 @@ export function Portfolio() {
   );
 }
 
-// Final ProjectCard: Whole card lift + Image inner zoom
 function ProjectCard({ project, index }: { project: Project; index: number }) {
   return (
     <motion.a
@@ -86,7 +84,6 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
       transition={{ duration: 0.35, delay: index * 0.05 }}
       className="group flex flex-col gap-4 cursor-pointer transition-all duration-300 ease-out hover:scale-[1.02] hover:-translate-y-1"
     >
-      {/* Image Container */}
       <div
         className="relative w-full overflow-hidden rounded-2xl bg-stone-100 dark:bg-stone-800 border border-stone-200 dark:border-stone-800 shadow-md dark:shadow-none group-hover:shadow-xl group-hover:shadow-violet-500/15 dark:group-hover:shadow-violet-900/10 transition-shadow duration-300"
         style={{ aspectRatio: "4/3" }}
@@ -95,13 +92,11 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           src={project.image}
           alt={project.title}
           fill
-          // THE FIX: Added the group-hover:scale-105 back to the image
           className="object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>
 
-      {/* Text Content (Always Visible) */}
       <div>
         <h3 className="font-display text-xl font-bold text-stone-900 dark:text-white group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors duration-200 leading-tight">
           {project.title}

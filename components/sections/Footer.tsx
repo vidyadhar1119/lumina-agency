@@ -21,7 +21,6 @@ export function Footer() {
         <footer className="bg-stone-50 dark:bg-[#050508] border-t border-stone-200 dark:border-stone-800/60 text-stone-500 dark:text-stone-400 py-12 px-6 md:px-12">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row items-center justify-between gap-8">
-                    {/* Left Column: Brand + Logo + Tagline */}
                     <div className="flex flex-col items-center md:items-start gap-3">
                         <a
                             href="#hero"
@@ -55,7 +54,6 @@ export function Footer() {
                         </p>
                     </div>
 
-                    {/* Middle Column: Nav links */}
                     <ul className="flex flex-wrap justify-center gap-6">
                         {footerLinks.map((link) => (
                             <li key={link.label}>
@@ -69,7 +67,6 @@ export function Footer() {
                         ))}
                     </ul>
 
-                    {/* Right Column: Social icons */}
                     <div className="flex items-center gap-4">
                         {socials.map(({ icon: Icon, href, label }) => (
                             <a
@@ -84,7 +81,6 @@ export function Footer() {
                     </div>
                 </div>
 
-                {/* Divider + Copyright */}
                 <div className="mt-10 pt-6 border-t border-stone-200 dark:border-white/5 text-center text-xs text-stone-400 dark:text-stone-600">
                     © {new Date().getFullYear()} Lumina Studio. All rights reserved.
                 </div>

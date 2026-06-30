@@ -28,7 +28,6 @@ export function Hero() {
             id="hero"
             className="relative min-h-screen flex items-center justify-center overflow-hidden"
         >
-            {/* BACKGROUND: Premium Violet & Fuchsia glow (Cyan removed) */}
             <div className="absolute inset-0 -z-10 pointer-events-none">
                 <div className="absolute top-1/3 left-1/4 w-120 h-120 bg-violet-600/0 dark:bg-violet-600/15 rounded-full blur-[120px]" />
                 <div className="absolute bottom-1/4 right-1/4 w-95 h-95 bg-fuchsia-600/0 dark:bg-fuchsia-600/10 rounded-full blur-[120px]" />
@@ -48,7 +47,6 @@ export function Hero() {
                     </span>
                 </motion.div>
 
-                {/* HEADLINE: Only 'digital' gets the gradient color */}
                 <motion.h1
                     variants={fadeUp}
                     className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-[88px] font-bold leading-none tracking-tight text-stone-900 dark:text-white mb-7"
@@ -72,7 +70,6 @@ export function Hero() {
                     variants={fadeUp}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4"
                 >
-                    {/* PRIMARY BUTTON */}
                     <a
                         href="#portfolio"
                         className="inline-flex items-center justify-center rounded-full px-9 py-4 text-base font-semibold bg-violet-600 text-white hover:bg-violet-500 hover:shadow-2xl hover:shadow-violet-600/40 active:scale-[0.97] transition-all duration-200"
@@ -80,7 +77,6 @@ export function Hero() {
                         View Our Work
                     </a>
 
-                    {/* SECONDARY BUTTON: Fixed contrast with lighter borders and text */}
                     <a
                         href="#contact"
                         className="inline-flex items-center justify-center rounded-full px-9 py-4 text-base font-semibold bg-transparent border border-stone-300 dark:border-stone-500 text-stone-700 dark:text-stone-200 hover:border-violet-500 hover:text-violet-600 dark:hover:border-violet-400 dark:hover:text-violet-400 active:scale-[0.97] transition-all duration-200"
