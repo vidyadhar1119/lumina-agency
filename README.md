@@ -2,7 +2,7 @@
 
 A modern, high-performance design agency homepage built as a Next.js Developer Internship evaluation task. Designed with a focus on fluid animations, strict accessibility standards, and a flawless dark/light mode toggle.
 
-**[🔴 View Live Deployment Here](https://design-beta.vercel.app)**
+**[🔴 View Live Deployment Here](https://lumina-agency-eta.vercel.app/)**
 
 ## Tech Stack
 
